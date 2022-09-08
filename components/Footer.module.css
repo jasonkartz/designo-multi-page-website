@@ -1,0 +1,51 @@
+.footer {
+  text-align: center;
+  background-color: var(--black);
+  padding: 50px 20px;
+}
+.footerTop,
+.footerBottom {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 40px;
+}
+.footerNav {
+  border-top: 1px solid var(--dark-grey);
+  width: 100%;
+  color: var(--light-grey);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 14px;
+  letter-spacing: 2px;
+  padding-block: 30px;
+}
+.footerNav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  text-transform: uppercase;
+}
+.footer address {
+  font-family: "Jost";
+  color: var(--light-grey);
+  opacity: 0.5;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 300;
+}
+.footer address span {
+  font-weight: 600;
+}
+.socialLinks {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 15px;
+}

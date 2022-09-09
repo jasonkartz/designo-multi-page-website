@@ -73,3 +73,17 @@ h3 {
   color: white;
   background-color: var(--peach);
 }
+main {
+  max-width: 1111px;
+  margin-inline: auto;
+}
+@media (min-width: 768px) {
+  main {
+    padding-inline: 30px;
+  }
+}
+@media (min-width: 1111px) {
+  main {
+    padding-inline: 0;
+  }
+}

@@ -17,7 +17,7 @@ export default function Header() {
         width={196}
         height={24}
       />
-      <nav className={styles.nav} style={{ display: !navToggle && "none" }}>
+      <nav className={`${styles.nav} ${navToggle && styles.navDisplay}`}>
         <ul>
           <li>Our Company</li>
           <li>Locations</li>

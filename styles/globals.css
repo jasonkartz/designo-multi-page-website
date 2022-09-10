@@ -76,6 +76,7 @@ h3 {
 main {
   max-width: 1111px;
   margin-inline: auto;
+  padding-inline: 24px;
 }
 .banner-home {
   display: flex;
@@ -87,6 +88,7 @@ main {
   text-align: center;
   padding-top: 80px;
   padding-inline: 24px;
+  margin-inline: -24px;
   height: 843px;
   background: url("../public/assets/home/desktop/image-hero-phone.png") 50% -300%
       no-repeat,
@@ -99,9 +101,31 @@ main {
   main {
     padding-inline: 30px;
   }
+  .banner-home {
+    padding-top: 60px;
+    padding-inline: 58px;
+    margin-inline: 0;
+    border-radius: 15px;
+    background-position: 50% -300%, 100% 100px;
+  }
 }
 @media (min-width: 1111px) {
   main {
     padding-inline: 0;
+  }
+  .banner-home {
+    height: 640px;
+    padding: 145px 95px;
+    text-align: left;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+    background-position: 565px -50px, right top;
+  }
+  .banner-home h1 {
+    width: 540px;
+  }
+  .banner-home p {
+    width: 445px;
   }
 }

@@ -13,8 +13,8 @@ export default function Home() {
         </p>
         <button className="btn-on-dark">Learn more </button>
       </section>
-      <section className="category-container">
-        <CategoryCard background="category-web" title="web design" />
+      <section className="category-container-home">
+        <CategoryCard background="category-web-home" title="web design" />
         <CategoryCard background="category-app" title="app design" />
         <CategoryCard background="category-graphic" title="graphic design" />
       </section>

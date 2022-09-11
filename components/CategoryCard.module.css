@@ -1,0 +1,93 @@
+.categoryContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.categoryWeb {
+  background: url("../public/assets/home/mobile/image-web-design.jpg") no-repeat
+    rgba(0, 0, 0, 0.5);
+}
+.categoryApp {
+  background: url("../public/assets/home/mobile/image-app-design.jpg") no-repeat
+    rgba(0, 0, 0, 0.5);
+}
+.categoryGraphic {
+  background: url("../public/assets/home/mobile/image-graphic-design.jpg")
+    no-repeat rgba(0, 0, 0, 0.5);
+}
+.categoryCardTopLayer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+}
+.categoryCardTopLayer:hover {
+  cursor: pointer;
+  background-color: rgba(231, 129, 107, 0.75);
+}
+.categoryCard:hover {
+  background-blend-mode: normal;
+}
+.categoryCard {
+  color: white;
+  text-align: center;
+  border-radius: 15px;
+  width: 100%;
+  height: 250px;
+  background-blend-mode: multiply;
+  background-size: cover;
+}
+.categoryCard p {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 22px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+}
+@media (min-width: 500px) {
+  .categoryWeb {
+    height: 200px;
+    background: url("../public/assets/home/desktop/image-web-design-small.jpg")
+      no-repeat rgba(0, 0, 0, 0.5);
+  }
+  .categoryApp {
+    height: 200px;
+    background: url("../public/assets/home/desktop/image-app-design.jpg")
+      no-repeat rgba(0, 0, 0, 0.5);
+  }
+  .categoryGraphic {
+    height: 200px;
+    background: url("../public/assets/home/desktop/image-graphic-design.jpg")
+      no-repeat rgba(0, 0, 0, 0.5);
+  }
+  .categoryCard {
+    background-size: cover;
+  }
+}
+@media (min-width: 1111px) {
+  .categoryContainer {
+    display: grid;
+    grid: [row1-start] "web app" [row1-end][row2-start] "web graphic" [row2-end];
+  }
+  .categoryWeb {
+    grid-area: web;
+    width: 541px;
+    height: 640px;
+    background: url("../public/assets/home/desktop/image-web-design-large.jpg")
+      no-repeat rgba(0, 0, 0, 0.5);
+  }
+  .categoryApp {
+    grid-area: app;
+    width: 541px;
+    height: 308px;
+  }
+  .categoryGraphic {
+    grid-area: graphic;
+    width: 541px;
+    height: 308px;
+  }
+}

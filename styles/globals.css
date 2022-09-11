@@ -102,12 +102,12 @@ main {
       no-repeat;
   background-size: 640px;
 }
-.category-container {
+.category-container-home {
   display: flex;
   flex-direction: column;
   gap: 24px;
 }
-.category-web {
+.category-web-home {
   background: url("../public/assets/home/mobile/image-web-design.jpg") no-repeat
     rgba(0, 0, 0, 0.5);
 }
@@ -153,7 +153,7 @@ main {
   text-transform: uppercase;
 }
 @media (min-width: 500px) {
-  .category-web {
+  .category-web-home {
     height: 200px;
     background: url("../public/assets/home/desktop/image-web-design-small.jpg")
       no-repeat rgba(0, 0, 0, 0.5);
@@ -186,7 +186,12 @@ main {
 }
 @media (min-width: 1111px) {
   body {
-    background: url("../public/assets/shared/desktop/bg-pattern-leaf.svg") space;
+    background: url("../public/assets/shared/desktop/bg-pattern-leaf.svg")
+        no-repeat,
+      url("../public/assets/shared/desktop/bg-pattern-leaf-flipped.svg")
+        no-repeat;
+    background-size: 1006px 594px;
+    background-position: 0px 400px, 100% 2000px;
   }
   main {
     padding-inline: 0;
@@ -207,11 +212,11 @@ main {
   .banner-home p {
     width: 445px;
   }
-  .category-container {
+  .category-container-home {
     display: grid;
     grid: [row1-start] "web app" [row1-end][row2-start] "web graphic" [row2-end];
   }
-  .category-web {
+  .category-web-home {
     grid-area: web;
     width: 541px;
     height: 640px;

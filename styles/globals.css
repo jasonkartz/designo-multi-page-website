@@ -81,6 +81,7 @@ main {
   display: flex;
   flex-direction: column;
   gap: 120px;
+  background-color: transparent;
 }
 .banner-home {
   display: flex;
@@ -184,6 +185,9 @@ main {
   }
 }
 @media (min-width: 1111px) {
+  body {
+    background: url("../public/assets/shared/desktop/bg-pattern-leaf.svg") space;
+  }
   main {
     padding-inline: 0;
     gap: 160px;

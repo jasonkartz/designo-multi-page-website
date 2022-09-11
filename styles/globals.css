@@ -153,14 +153,17 @@ main {
 }
 @media (min-width: 500px) {
   .category-web {
+    height: 200px;
     background: url("../public/assets/home/desktop/image-web-design-small.jpg")
       no-repeat rgba(0, 0, 0, 0.5);
   }
   .category-app {
+    height: 200px;
     background: url("../public/assets/home/desktop/image-app-design.jpg")
       no-repeat rgba(0, 0, 0, 0.5);
   }
   .category-graphic {
+    height: 200px;
     background: url("../public/assets/home/desktop/image-graphic-design.jpg")
       no-repeat rgba(0, 0, 0, 0.5);
   }

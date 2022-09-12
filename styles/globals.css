@@ -229,7 +229,7 @@ main {
         no-repeat,
       url("../public/assets/shared/desktop/bg-pattern-leaf-flipped.svg")
         no-repeat;
-    background-size: 75%;
+    background-size: clamp(1006px, 20vw, 3006px);
     background-position: 0px 450px, 100% 1850px;
   }
   main {

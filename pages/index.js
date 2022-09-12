@@ -1,5 +1,9 @@
 import Image from "next/image";
 import CategoryCard from "../components/CategoryCard";
+import Infographic from "../components/InfoGraphic";
+import friendlyImg from "../public/assets/home/desktop/illustration-friendly.svg";
+import passionateImg from "../public/assets/home/desktop/illustration-passionate.svg";
+import resourcefulImg from "../public/assets/home/desktop/illustration-resourceful.svg";
 
 export default function Home() {
   return (
@@ -18,17 +22,36 @@ export default function Home() {
         <CategoryCard background="category-app" title="app design" />
         <CategoryCard background="category-graphic" title="graphic design" />
       </section>
-      App Design View Projects Graphic Design View Projects Passionate Each
-      project starts with an in-depth brand research to ensure we only create
-      products that serve a purpose. We merge art, design, and technology into
-      exciting new solutions. Resourceful Everything that we do has a strategic
-      purpose. We use an agile approach in all of our projects and value
-      customer collaboration. It guarantees superior results that fulfill our
-      clients’ needs. Friendly We are a group of enthusiastic folks who know how
-      to put people first. Our success depends on our customers, and we strive
-      to give them the best experience a company can provide. Let’s talk about
-      your project Ready to take it to the next level? Contact us today and find
-      out how our expertise can help your business grow. Get in touch
+      <section className="infographic-container">
+        <Infographic
+          image={passionateImg}
+          alt="passionate"
+          title="Passionate"
+          description="Each
+        project starts with an in-depth brand research to ensure we only create
+        products that serve a purpose. We merge art, design, and technology into
+        exciting new solutions."
+        />
+        <Infographic
+          image={resourcefulImg}
+          alt="resourceful"
+          title="Resourceful"
+          description="Everything that we do has a strategic purpose. We use an agile
+          approach in all of our projects and value customer collaboration. It
+          guarantees superior results that fulfill our clients’ needs."
+        />
+        <Infographic
+          image={friendlyImg}
+          alt="friendly"
+          title="Friendly"
+          description="We are a group of enthusiastic folks who know how to put people
+          first. Our success depends on our customers, and we strive to give them
+          the best experience a company can provide."
+        />
+      </section>
+      Let’s talk about your project Ready to take it to the next level? Contact
+      us today and find out how our expertise can help your business grow. Get
+      in touch
     </>
   );
 }

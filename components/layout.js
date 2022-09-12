@@ -21,7 +21,9 @@ export default function Layout({ children }) {
         />
       </Head>
       <Header />
-      <main>{children}</main>
+      <div className="bg-design">
+        <main>{children}</main>
+      </div>
       <Footer />
     </>
   );

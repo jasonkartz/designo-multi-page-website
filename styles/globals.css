@@ -223,7 +223,7 @@ main {
   }
 }
 @media (min-width: 1111px) {
-  .bg-design {
+  body {
     margin-inline: auto;
     max-width: 1440px;
     background: url("../public/assets/shared/desktop/bg-pattern-leaf.svg")

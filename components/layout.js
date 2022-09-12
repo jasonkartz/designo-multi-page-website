@@ -1,8 +1,7 @@
 import Head from "next/head";
 import Header from "./header";
-import Footer from "./footer";
 
-export default function Layout({ children }) {
+export default function Layout() {
   return (
     <>
       <Head>
@@ -21,10 +20,6 @@ export default function Layout({ children }) {
         />
       </Head>
       <Header />
-      <div className="bg-design">
-        <main>{children}</main>
-      </div>
-      <Footer />
     </>
   );
 }

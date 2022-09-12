@@ -48,6 +48,7 @@ h3 {
 }
 .btn-on-dark,
 .btn-on-light {
+  color: var(--black);
   font-style: normal;
   font-weight: 500;
   font-size: 15px;
@@ -77,6 +78,7 @@ h3 {
 main {
   max-width: 1111px;
   margin-inline: auto;
+  margin-bottom: 121px;
   padding-inline: 24px;
   display: flex;
   flex-direction: column;
@@ -195,6 +197,7 @@ main {
 @media (min-width: 768px) {
   main {
     padding-inline: 30px;
+    margin-bottom: 67px;
   }
   .banner-home {
     padding-top: 60px;
@@ -231,6 +234,7 @@ main {
     background-position: 0px 450px, 100% 1850px;
   }
   main {
+    margin-bottom: 160px;
     padding-inline: 0;
     gap: 160px;
   }

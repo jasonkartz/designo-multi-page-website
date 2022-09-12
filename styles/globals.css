@@ -225,7 +225,6 @@ main {
 @media (min-width: 1111px) {
   body {
     margin-inline: auto;
-    max-width: 1440px;
     background: url("../public/assets/shared/desktop/bg-pattern-leaf.svg")
         no-repeat,
       url("../public/assets/shared/desktop/bg-pattern-leaf-flipped.svg")

@@ -21,11 +21,7 @@
   align-items: center;
   gap: 32px;
 }
-.contactCard h4 {
-  font-weight: 500;
-  font-size: clamp(32px, 6vw, 40px);
-  line-height: clamp(36px, 6vw, 40px);
-}
+
 .contactCard p {
   font-size: clamp(15px, 2.5vw, 16px);
   line-height: clamp(25px, 2.5vw, 26px);

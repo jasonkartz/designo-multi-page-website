@@ -1,0 +1,14 @@
+.section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 48px;
+}
+.location {
+  text-align: center;
+}
+.location h4 {
+  margin-top: 48px;
+  margin-bottom: 32px;
+}

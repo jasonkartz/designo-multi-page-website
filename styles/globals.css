@@ -10,6 +10,7 @@
   --light-peach: #ffad9b;
   --dark-grey: #333136;
   --light-grey: #f1f3f5;
+  --lighter-peach: #fdf3f0;
 }
 
 * {
@@ -50,6 +51,11 @@ h3 {
   line-height: 26px;
   letter-spacing: 5px;
   text-transform: uppercase;
+}
+h4 {
+  font-weight: 500;
+  font-size: clamp(32px, 6vw, 40px);
+  line-height: clamp(36px, 6vw, 40px);
 }
 .btn-on-dark,
 .btn-on-light {

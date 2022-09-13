@@ -109,7 +109,7 @@
 
 @media (min-width: 768px) {
   .contactCard {
-    width: 690px;
+    max-width: 690px;
     padding: 57px 58px;
   }
   .contactCard h4 {
@@ -160,7 +160,7 @@
     flex-direction: row;
     justify-content: space-between;
     text-align: left;
-    width: 1111px;
+    max-width: 1111px;
     padding: 72px 95px;
   }
   .contactCardText {

@@ -9,47 +9,47 @@ export default function Header() {
   const [navToggle, setNavToggle] = useState(false);
 
   return (
-    <header className={styles.header}>
-      <Image
-        className={styles.logo}
-        src={logo}
-        alt="Designo Logo"
-        width={196}
-        height={24}
-      />
-      <nav className={`${styles.nav} ${navToggle && styles.navDisplay}`}>
-        <ul>
-          <li>Our Company</li>
-          <li>Locations</li>
-          <li>Contact</li>
-        </ul>
-      </nav>
+    <>
+      <header className={`${styles.header} ${navToggle && styles.fixed}`}>
+        <Image
+          className={styles.logo}
+          src={logo}
+          alt="Designo Logo"
+          width={196}
+          height={24}
+        />
+        <nav className={`${styles.nav} ${navToggle && styles.navDisplay}`}>
+          <ul>
+            <li>Our Company</li>
+            <li>Locations</li>
+            <li>Contact</li>
+          </ul>
+        </nav>
 
-      <button
-        className={styles.navBtn}
-        onClick={() => setNavToggle(!navToggle)}
-      >
-        {navToggle ? (
-          <Image
-            src={closeMenu}
-            alt="Close Navigation Menu"
-            width={20}
-            height={20}
-          />
-        ) : (
-          <Image
-            src={hamburger}
-            alt="Open Navigation Menu"
-            width={24}
-            height={20}
-          />
-        )}
-      </button>
-
+        <button
+          className={styles.navBtn}
+          onClick={() => setNavToggle(!navToggle)}
+        >
+          {navToggle ? (
+            <Image
+              src={closeMenu}
+              alt="Close Navigation Menu"
+              width={20}
+              height={20}
+            />
+          ) : (
+            <Image
+              src={hamburger}
+              alt="Open Navigation Menu"
+              width={24}
+              height={20}
+            />
+          )}
+        </button>
+      </header>
       <div
-        className={styles.darken}
-        style={{ display: !navToggle && "none" }}
+        className={`${styles.darken} ${navToggle && styles.darkenDisplay}`}
       ></div>
-    </header>
+    </>
   );
 }

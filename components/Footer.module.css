@@ -6,7 +6,8 @@
   align-items: center;
   gap: 32px;
   border-radius: 15px;
-  width: 327px;
+  min-width: none;
+  max-width: 327px;
   margin-inline: auto;
   padding: 64px 24px;
   text-align: center;

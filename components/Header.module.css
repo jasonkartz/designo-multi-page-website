@@ -88,7 +88,12 @@
     line-height: 14px;
     letter-spacing: 2px;
   }
-  .nav ul li:hover {
+  .nav ul li a:link,
+  .nav ul li a:visited {
+    text-decoration: none;
+    color: inherit;
+  }
+  .nav ul li a:hover {
     cursor: pointer;
     text-decoration: underline rgba(51, 49, 54, 0.5);
     text-underline-offset: 2px;

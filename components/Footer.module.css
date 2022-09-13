@@ -72,6 +72,20 @@
   gap: 30px;
   text-transform: uppercase;
 }
+.footer a:link,
+.footer a:visited {
+  color: inherit;
+  text-decoration: none;
+}
+.footer a:hover {
+  cursor: pointer;
+}
+.footerNav ul li a:hover {
+  cursor: pointer;
+  text-decoration: underline rgba(255, 255, 255, 0.5);
+  text-underline-offset: 2px;
+}
+
 .footer address {
   font-family: "Jost";
   color: var(--light-grey);

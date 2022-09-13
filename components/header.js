@@ -4,6 +4,7 @@ import hamburger from "../public/assets/shared/mobile/icon-hamburger.svg";
 import closeMenu from "../public/assets/shared/mobile/icon-close.svg";
 import styles from "./Header.module.css";
 import { useState } from "react";
+import Link from "next/link";
 
 export default function Header() {
   const [navToggle, setNavToggle] = useState(false);
@@ -11,18 +12,34 @@ export default function Header() {
   return (
     <>
       <header className={`${styles.header} ${navToggle && styles.fixed}`}>
-        <Image
-          className={styles.logo}
-          src={logo}
-          alt="Designo Logo"
-          width={196}
-          height={24}
-        />
+        <Link href="/">
+          <a>
+            <Image
+              className={styles.logo}
+              src={logo}
+              alt="Designo Logo"
+              width={196}
+              height={24}
+            />
+          </a>
+        </Link>
         <nav className={`${styles.nav} ${navToggle && styles.navDisplay}`}>
           <ul>
-            <li>Our Company</li>
-            <li>Locations</li>
-            <li>Contact</li>
+            <li>
+              <Link href="about">
+                <a>Our Company</a>
+              </Link>
+            </li>
+            <li>
+              <Link href="locations">
+                <a>Locations</a>
+              </Link>
+            </li>
+            <li>
+              <Link href="contact">
+                <a>Contact</a>
+              </Link>
+            </li>
           </ul>
         </nav>
 

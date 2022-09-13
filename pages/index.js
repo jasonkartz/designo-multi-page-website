@@ -6,6 +6,8 @@ import passionateImg from "../public/assets/home/desktop/illustration-passionate
 import resourcefulImg from "../public/assets/home/desktop/illustration-resourceful.svg";
 import Footer from "../components/footer";
 import Layout from "../components/layout";
+import Link from "next/link";
+
 export default function Home() {
   return (
     <>
@@ -22,9 +24,21 @@ export default function Home() {
           <button className="btn-on-dark">Learn more </button>
         </section>
         <section className="category-container-home">
-          <CategoryCard background="category-web-home" title="web design" />
-          <CategoryCard background="category-app" title="app design" />
-          <CategoryCard background="category-graphic" title="graphic design" />
+          <CategoryCard
+            background="category-web-home"
+            title="web design"
+            link="web-design"
+          />
+          <CategoryCard
+            background="category-app"
+            title="app design"
+            link="app-design"
+          />
+          <CategoryCard
+            background="category-graphic"
+            title="graphic design"
+            link="graphic-design"
+          />
         </section>
         <section className="infographic-container">
           <Infographic

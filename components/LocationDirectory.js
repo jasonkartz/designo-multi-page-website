@@ -14,7 +14,7 @@ export default function LocationDirectory() {
           width={202}
           height={202}
         />
-        <h4>Canada</h4>
+        <h3>Canada</h3>
         <button className="btn-on-light">See Location</button>
       </div>
       <div className={styles.location}>
@@ -25,7 +25,7 @@ export default function LocationDirectory() {
           width={202}
           height={202}
         />
-        <h4>Australia</h4>
+        <h3>Australia</h3>
         <button className="btn-on-light">See Location</button>
       </div>
       <div className={styles.location}>
@@ -36,7 +36,7 @@ export default function LocationDirectory() {
           width={202}
           height={202}
         />
-        <h4>United Kingdom</h4>
+        <h3>United Kingdom</h3>
         <button className="btn-on-light">See Location</button>
       </div>
     </section>

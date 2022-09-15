@@ -26,6 +26,7 @@ export default function Locations() {
             addressLine2="New South Wales 2443"
             phone="(02) 6720 9092"
             email="contact@designo.au"
+            containerClass={styles.flexRow}
           />
           <LocationCard
             imageClass={styles.imgUK}

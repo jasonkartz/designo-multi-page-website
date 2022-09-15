@@ -21,3 +21,40 @@
 .locationText span {
   font-weight: 700;
 }
+
+@media (min-width: 768px) {
+  .mapImage {
+    border-radius: 15px;
+    height: 326px;
+  }
+  .locationText {
+    border-radius: 15px;
+    margin-top: 31px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    padding: 88px 75px;
+    min-height: 326px;
+    background: url("../public/assets/shared/desktop/bg-pattern-two-circles.svg")
+      no-repeat var(--lighter-peach);
+    background-position: 0 100%;
+  }
+  .addressContainer {
+    display: flex;
+    gap: 88px;
+  }
+}
+@media (min-width: 1111px) {
+  .location {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+  }
+  .locationText {
+    margin: 0;
+    width: 730px;
+  }
+  .mapImage {
+    width: 350px;
+  }
+}

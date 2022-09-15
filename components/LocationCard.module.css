@@ -1,0 +1,23 @@
+.location {
+  width: 100%;
+}
+.mapImage {
+  height: 320px;
+}
+.locationText {
+  text-align: center;
+  background: url("../public/assets/shared/desktop/bg-pattern-three-circles.svg")
+    no-repeat var(--lighter-peach);
+  color: var(--dark-grey);
+  padding: 80px 24px;
+}
+.locationText h4 {
+  color: var(--peach);
+}
+.locationText address {
+  margin-top: 24px;
+  font-style: normal;
+}
+.locationText span {
+  font-weight: 700;
+}

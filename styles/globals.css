@@ -185,6 +185,7 @@ main {
 .text-infographic p {
   margin-top: 22px;
 }
+
 @media (min-width: 500px) {
   .category-web-home {
     height: 200px;
@@ -205,6 +206,7 @@ main {
     background-size: cover;
   }
 }
+
 @media (min-width: 768px) {
   main {
     padding-inline: 30px;
@@ -232,6 +234,7 @@ main {
     margin-top: 16px;
   }
 }
+
 @media (min-width: 1111px) {
   body {
     margin-inline: auto;

@@ -1,14 +1,15 @@
 import Footer from "../components/footer";
 import Layout from "../components/layout";
 import LocationDirectory from "../components/LocationDirectory";
+import styles from "../styles/contact.module.css";
 
 export default function Contact() {
   return (
     <>
       <Layout />
       <main>
-        <section>
-          <div>
+        <section className={styles.contactSection}>
+          <div className={styles.contactText}>
             <h1>Conact Us</h1>
             <p>
               Ready to take it to the next level? Let’s talk about your project
@@ -17,7 +18,7 @@ export default function Contact() {
               your users, drop us a line.
             </p>
           </div>
-          <form>
+          <form className={styles.form}>
             <input type="text" name="name" placeholder="Name" />
             <input type="email" name="email" placeholder="Email Address" />
             <input type="tel" name="phone" placeholder="Phone" />

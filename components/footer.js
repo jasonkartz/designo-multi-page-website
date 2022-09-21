@@ -22,7 +22,9 @@ export default function Footer({ includeContactCard }) {
                 out how our expertise can help your business grow.
               </p>
             </div>
-            <button className="btn-on-dark">Get in touch</button>
+            <Link href="contact">
+              <button className="btn-on-dark">Get in touch</button>
+            </Link>
           </div>
           <div className={styles.footerExtender}></div>
         </div>

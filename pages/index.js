@@ -21,7 +21,9 @@ export default function Home() {
             fully responsive websites, app design, and engaging brand
             experiences. Find out more about our services.
           </p>
-          <button className="btn-on-dark">Learn more </button>
+          <Link href="about">
+            <button className="btn-on-dark">Learn more </button>
+          </Link>
         </section>
         <section className="category-container-home">
           <CategoryCard

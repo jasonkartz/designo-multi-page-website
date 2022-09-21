@@ -116,11 +116,28 @@ main {
       no-repeat;
   background-size: 640px;
 }
+.category-container,
 .category-container-home {
   display: flex;
   flex-direction: column;
   gap: 24px;
 }
+.web-banner-bg-image,
+.app-banner-bg-image,
+.graphic-banner-bg-image {
+  background-repeat: no-repeat;
+  background-position: right top;
+}
+.web-banner-bg-image {
+  background-image: url("../public/assets/web-design/desktop/bg-pattern-intro-web.svg");
+}
+.app-banner-bg-image {
+  background-image: url("../public/assets/app-design/desktop/bg-pattern-intro-app.svg");
+}
+.graphic-banner-bg-image {
+  background-image: url("../public/assets/graphic-design/desktop/bg-pattern-intro-graphic.svg");
+}
+.category-web,
 .category-web-home {
   background: url("../public/assets/home/mobile/image-web-design.jpg") no-repeat
     rgba(0, 0, 0, 0.5);
@@ -188,6 +205,7 @@ main {
 }
 
 @media (min-width: 500px) {
+  .category-web,
   .category-web-home {
     height: 200px;
     background: url("../public/assets/home/desktop/image-web-design-small.jpg")
@@ -211,6 +229,11 @@ main {
 @media (min-width: 768px) {
   main {
     padding-inline: 30px;
+  }
+  .web-banner-bg-image,
+  .app-banner-bg-image,
+  .graphic-banner-bg-image {
+    background-position: 50% 50%;
   }
   .banner-home {
     padding-top: 60px;
@@ -251,6 +274,13 @@ main {
     padding-inline: 0;
     gap: 160px;
   }
+  .web-banner-bg-image,
+  .graphic-banner-bg-image {
+    background-position: right 50%;
+  }
+  .app-banner-bg-image {
+    background-position: left 50%;
+  }
   .banner-home {
     height: 640px;
     padding: 145px 95px;
@@ -270,12 +300,19 @@ main {
     display: grid;
     grid: [row1-start] "web app" [row1-end][row2-start] "web graphic" [row2-end];
   }
+  .category-container {
+    flex-direction: row;
+  }
   .category-web-home {
     grid-area: web;
     width: 541px;
     height: 640px;
     background: url("../public/assets/home/desktop/image-web-design-large.jpg")
       no-repeat rgba(0, 0, 0, 0.5);
+  }
+  .category-web {
+    width: 541px;
+    height: 308px;
   }
   .category-app {
     grid-area: app;

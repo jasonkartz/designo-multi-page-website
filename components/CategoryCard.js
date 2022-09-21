@@ -1,6 +1,5 @@
 import rightArrow from "../public/assets/shared/desktop/icon-right-arrow.svg";
 import Image from "next/image";
-import bg from "../public/assets/home/mobile/image-app-design.jpg";
 import Link from "next/link";
 
 export default function CategoryCard({ background, title, link }) {

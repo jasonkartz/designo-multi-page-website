@@ -137,6 +137,95 @@ main {
 .graphic-banner-bg-image {
   background-image: url("../public/assets/graphic-design/desktop/bg-pattern-intro-graphic.svg");
 }
+.project-portfolio {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.bg-express {
+  background-image: url("../public/assets/web-design/desktop/image-express.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.bg-transfer {
+  background-image: url("../public/assets/web-design/desktop/image-transfer.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.bg-photon {
+  background-image: url("../public/assets/web-design/desktop/image-photon.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.bg-builder {
+  background-image: url("../public/assets/web-design/desktop/image-builder.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.bg-blogr {
+  background-image: url("../public/assets/web-design/desktop/image-blogr.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.bg-camp {
+  background-image: url("../public/assets/web-design/desktop/image-camp.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.bg-airfilter {
+  background-image: url("../public/assets/app-design/desktop/image-airfilter.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.bg-eyecam {
+  background-image: url("../public/assets/app-design/desktop/image-eyecam.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.bg-faceit {
+  background-image: url("../public/assets/app-design/desktop/image-faceit.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.bg-todo {
+  background-image: url("../public/assets/app-design/desktop/image-todo.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.bg-loopstudios {
+  background-image: url("../public/assets/app-design/desktop/image-loopstudios.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.bg-tim-brown {
+  background-image: url("../public/assets/graphic-design/desktop/image-change.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.bg-boxed-water {
+  background-image: url("../public/assets/graphic-design/desktop/image-boxed-water.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.bg-science {
+  background-image: url("../public/assets/graphic-design/desktop/image-science.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
 .category-web,
 .category-web-home {
   background: url("../public/assets/home/mobile/image-web-design.jpg") no-repeat
@@ -258,7 +347,6 @@ main {
     margin-top: 16px;
   }
 }
-
 @media (min-width: 1111px) {
   body {
     margin-inline: auto;
@@ -295,6 +383,11 @@ main {
   }
   .banner-home p {
     width: 445px;
+  }
+  .project-portfolio {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
   }
   .category-container-home {
     display: grid;

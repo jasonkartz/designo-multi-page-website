@@ -10,6 +10,7 @@ export default function Locations() {
       <main>
         <section className={styles.locationSection}>
           <LocationCard
+            anchorId="canada"
             imageClass={styles.imgCanada}
             locationTitle="Canada"
             locationName="Designo Central Office"
@@ -19,6 +20,7 @@ export default function Locations() {
             email="contact@designo.co"
           />
           <LocationCard
+            anchorId="australia"
             imageClass={styles.imgAustralia}
             locationTitle="Australia"
             locationName="Designo AU Office"
@@ -29,6 +31,7 @@ export default function Locations() {
             containerClass={styles.flexRow}
           />
           <LocationCard
+            anchorId="uk"
             imageClass={styles.imgUK}
             locationTitle="United Kingdom"
             locationName="Designo UK Office"

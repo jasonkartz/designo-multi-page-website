@@ -1,6 +1,7 @@
 import styles from "./LocationCard.module.css";
 
 export default function LocationCard({
+  anchorId,
   imageClass,
   locationTitle,
   locationName,
@@ -11,7 +12,7 @@ export default function LocationCard({
   containerClass,
 }) {
   return (
-    <div className={`${styles.location} ${containerClass}`}>
+    <div id={anchorId} className={`${styles.location} ${containerClass}`}>
       <div className={`${styles.mapImage} ${imageClass}`}></div>
       <div className={styles.locationText}>
         <h4>{locationTitle}</h4>

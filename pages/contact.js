@@ -4,8 +4,27 @@ import LocationDirectory from "../components/LocationDirectory";
 import Image from "next/image";
 import iconError from "../public/assets/contact/desktop/icon-error.svg";
 import styles from "../styles/contact.module.css";
+import { useState } from "react";
 
 export default function Contact() {
+  const [form, setForm] = useState({
+    name: "",
+    email: "",
+    phone: "",
+    message: "",
+  });
+
+  const handleChange = (e) => {
+    const name = e.target.name;
+    const value = e.target.value;
+    setForm((values) => ({ ...values, [name]: value }));
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log(form);
+  };
+
   const error = (
     <div className={styles.errorContainer}>
       <p>
@@ -14,6 +33,7 @@ export default function Contact() {
       <Image src={iconError} alt="Error" height={20} width={20} />
     </div>
   );
+
   return (
     <>
       <Layout />
@@ -28,15 +48,38 @@ export default function Contact() {
               your users, drop us a line.
             </p>
           </div>
-          <form className={styles.form}>
+          <form className={styles.form} onSubmit={handleSubmit}>
             {error}
-            <input type="text" name="name" placeholder="Name" />
+            <input
+              type="text"
+              name="name"
+              placeholder="Name"
+              value={form.name}
+              onChange={handleChange}
+            />
             {error}
-            <input type="email" name="email" placeholder="Email Address" />
+            <input
+              type="email"
+              name="email"
+              placeholder="Email Address"
+              value={form.email}
+              onChange={handleChange}
+            />
             {error}
-            <input type="tel" name="phone" placeholder="Phone" />
+            <input
+              type="tel"
+              name="phone"
+              placeholder="Phone"
+              value={form.phone}
+              onChange={handleChange}
+            />
             {error}
-            <textarea name="message" placeholder="Your Message" />
+            <textarea
+              name="message"
+              placeholder="Your Message"
+              value={form.message}
+              onChange={handleChange}
+            />
             <button type="submit" className="btn-on-dark">
               Submit
             </button>

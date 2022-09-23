@@ -21,12 +21,14 @@
   gap: 25px;
 }
 .errorContainer {
+  width: 110px;
+  margin-left: auto;
   display: flex;
   gap: 10px;
   justify-content: flex-end;
   align-items: center;
   position: relative;
-  top: 50px;
+  top: 55px;
 }
 .errorContainer p {
   font-size: 12px;
@@ -36,7 +38,7 @@
 .form textarea {
   color: white;
   background-color: transparent;
-  padding: 11px 14px;
+  padding: 15px;
   border: none;
   border-bottom: 1px white solid;
 }
@@ -44,6 +46,7 @@
   max-width: 100%;
   min-width: 100%;
   min-height: 102px;
+  margin-bottom: 20px;
 }
 .form input::placeholder,
 .form textarea::placeholder {
@@ -51,10 +54,17 @@
   opacity: 0.5;
 }
 .form input:focus,
-.form textarea:focus {
+.form input:hover,
+.form textarea:focus,
+.form textarea:hover {
+  cursor: pointer;
   border: none;
   border-bottom: 3px white solid;
   outline: none;
+}
+.form input:focus:hover,
+.form textarea:focus:hover {
+  cursor: text;
 }
 
 @media (min-width: 768px) {
@@ -71,7 +81,10 @@
     margin-bottom: 40px;
   }
   .form {
-    gap: 25px;
+    gap: 5px;
+  }
+  .errorContainer {
+    top: 40px;
   }
   .form button {
     margin-top: 0;
@@ -83,11 +96,16 @@
     display: flex;
     justify-content: space-evenly;
     background-position: bottom left;
+    align-items: center;
   }
   .contactText {
     width: 445px;
   }
   .form {
     width: 380px;
+    gap: 0;
+  }
+  .errorContainer {
+    top: 35px;
   }
 }

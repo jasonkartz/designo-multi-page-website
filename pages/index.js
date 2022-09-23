@@ -1,4 +1,3 @@
-import Image from "next/image";
 import CategoryCard from "../components/CategoryCard";
 import Infographic from "../components/InfoGraphic";
 import friendlyImg from "../public/assets/home/desktop/illustration-friendly.svg";

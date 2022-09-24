@@ -1,38 +1,16 @@
 import Footer from "../components/footer";
 import Layout from "../components/layout";
 import LocationDirectory from "../components/LocationDirectory";
-import Image from "next/image";
-import iconError from "../public/assets/contact/desktop/icon-error.svg";
+import FormError from "./FormError";
 import styles from "../styles/contact.module.css";
-import { useState } from "react";
+import { useForm } from "react-hook-form";
 
 export default function Contact() {
-  const [form, setForm] = useState({
-    name: "",
-    email: "",
-    phone: "",
-    message: "",
-  });
-
-  const handleChange = (e) => {
-    const name = e.target.name;
-    const value = e.target.value;
-    setForm((values) => ({ ...values, [name]: value }));
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    console.log(form);
-  };
-
-  const error = (
-    <div className={styles.errorContainer}>
-      <p>
-        <em>{"Can't be empty"}</em>
-      </p>
-      <Image src={iconError} alt="Error" height={20} width={20} />
-    </div>
-  );
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm();
 
   return (
     <>
@@ -48,37 +26,49 @@ export default function Contact() {
               your users, drop us a line.
             </p>
           </div>
-          <form className={styles.form} onSubmit={handleSubmit}>
-            {error}
+          <form
+            className={styles.form}
+            onSubmit={handleSubmit(() => {
+              alert("Thank you! We will be in touch shortly!");
+            })}
+          >
+            {errors.name && (
+              <FormError
+                className={styles.errorContainer}
+                message={errors.name?.message}
+              />
+            )}
             <input
-              type="text"
-              name="name"
+              {...register("name", { required: "Can't be empty" })}
               placeholder="Name"
-              value={form.name}
-              onChange={handleChange}
             />
-            {error}
+            {errors.email && (
+              <FormError
+                className={styles.errorContainer}
+                message={errors.email?.message}
+              />
+            )}
             <input
-              type="email"
-              name="email"
+              {...register("email", {
+                required: "Can't be empty",
+                pattern: {
+                  value:
+                    /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/,
+                  message: "Please use a valid email address",
+                },
+              })}
               placeholder="Email Address"
-              value={form.email}
-              onChange={handleChange}
             />
-            {error}
-            <input
-              type="tel"
-              name="phone"
-              placeholder="Phone"
-              value={form.phone}
-              onChange={handleChange}
-            />
-            {error}
+            <input {...register("phone")} placeholder="Phone" />
+            {errors.message && (
+              <FormError
+                className={styles.errorContainer}
+                message={errors.message?.message}
+              />
+            )}
             <textarea
-              name="message"
+              {...register("message", { required: "Can't be empty" })}
               placeholder="Your Message"
-              value={form.message}
-              onChange={handleChange}
             />
             <button type="submit" className="btn-on-dark">
               Submit

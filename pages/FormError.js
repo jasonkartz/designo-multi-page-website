@@ -1,4 +1,4 @@
-import iconError from "../public/assets/contact/desktop/icon-error.svg";
+import iconError from "../public/images/icon-error.svg";
 import Image from "next/image";
 
 export default function FormError({ className, message }) {

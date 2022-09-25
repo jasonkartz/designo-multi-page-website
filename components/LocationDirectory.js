@@ -1,7 +1,7 @@
 import styles from "./LocationDirectory.module.css";
-import canada from "../public/assets/shared/desktop/illustration-canada.svg";
-import australia from "../public/assets/shared/desktop/illustration-australia.svg";
-import uk from "../public/assets/shared/desktop/illustration-united-kingdom.svg";
+import canada from "../public/images/illustration-canada.svg";
+import australia from "../public/images/illustration-australia.svg";
+import uk from "../public/images/illustration-united-kingdom.svg";
 import Image from "next/image";
 import Link from "next/link";
 

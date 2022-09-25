@@ -5,16 +5,15 @@
 .heroImg {
   margin-inline: -24px;
   height: 320px;
-  background: url("../public/assets/about/mobile/image-about-hero.jpg")
-    no-repeat;
+  background: url("/images/mobile/image-about-hero.jpg") no-repeat;
   background-size: cover;
 }
 .heroText {
   height: 395px;
   margin-inline: -24px;
   margin-bottom: -120px;
-  background: url("../public/assets/about/mobile/bg-pattern-hero-about-mobile.svg")
-    no-repeat var(--peach);
+  background: url("/images/mobile/bg-pattern-hero-about-mobile.svg") no-repeat
+    var(--peach);
   background-position: 100% 25%;
   background-size: 900px;
   color: white;
@@ -31,16 +30,15 @@
 .cardOneImg {
   margin-inline: -24px;
   height: 320px;
-  background: url("../public/assets/about/mobile/image-world-class-talent.jpg")
-    no-repeat;
+  background: url("/images/mobile/image-world-class-talent.jpg") no-repeat;
   background-size: cover;
 }
 .cardText {
   text-align: center;
   padding: 80px 24px;
   margin-inline: -24px;
-  background: url("../public/assets/shared/desktop/bg-pattern-three-circles.svg")
-    no-repeat var(--lighter-peach);
+  background: url("/images/bg-pattern-three-circles.svg") no-repeat
+    var(--lighter-peach);
 }
 .cardText h4 {
   color: var(--peach);
@@ -48,28 +46,25 @@
 .cardTwoImg {
   margin-inline: -24px;
   height: 320px;
-  background: url("../public/assets/about/mobile/image-real-deal.jpg") no-repeat;
+  background: url("/images/mobile/image-real-deal.jpg") no-repeat;
   background-size: cover;
 }
 @media (min-width: 500px) {
   .heroImg {
-    background: url("../public/assets/about/tablet/image-about-hero.jpg")
-      no-repeat;
+    background: url("/images/tablet/image-about-hero.jpg") no-repeat;
     background-size: cover;
   }
   .cardOneImg {
-    background: url("../public/assets/about/tablet/image-world-class-talent.jpg")
-      no-repeat;
+    background: url("/images/tablet/image-world-class-talent.jpg") no-repeat;
     background-size: cover;
   }
   .cardTwoImg {
-    background: url("../public/assets/about/tablet/image-real-deal.jpg")
-      no-repeat;
+    background: url("/images/tablet/image-real-deal.jpg") no-repeat;
     background-size: cover;
   }
   .heroText {
-    background: url("../public/assets/about/desktop/bg-pattern-hero-about-desktop.svg")
-      no-repeat var(--peach);
+    background: url("/images/bg-pattern-hero-about-desktop.svg") no-repeat
+      var(--peach);
     background-position: -120px -400px;
   }
   .cardText {
@@ -117,8 +112,7 @@
     height: 480px;
     width: 40%;
     border-radius: 0 15px 15px 0;
-    background: url("../public/assets/about/desktop/image-about-hero.jpg")
-      no-repeat;
+    background: url("/images/image-about-hero.jpg") no-repeat;
     background-size: cover;
   }
   .heroText {
@@ -137,8 +131,7 @@
     height: 640px;
   }
   .cardOneImg {
-    background: url("../public/assets/about/desktop/image-world-class-talent.jpg")
-      no-repeat;
+    background: url("/images/image-world-class-talent.jpg") no-repeat;
     background-size: cover;
     background-position: bottom;
     width: 40%;
@@ -155,8 +148,8 @@
     flex-direction: column;
     justify-content: center;
     padding-inline: 95px;
-    background: url("../public/assets/shared/desktop/bg-pattern-two-circles.svg")
-      no-repeat var(--lighter-peach);
+    background: url("/images/bg-pattern-two-circles.svg") no-repeat
+      var(--lighter-peach);
     background-position: 0 100%;
   }
   .cardTwo {
@@ -169,8 +162,7 @@
     width: 40%;
     height: auto;
     border-radius: 0 15px 15px 0;
-    background: url("../public/assets/about/desktop/image-real-deal.jpg")
-      no-repeat;
+    background: url("/images/image-real-deal.jpg") no-repeat;
     background-size: cover;
     background-position: bottom;
   }

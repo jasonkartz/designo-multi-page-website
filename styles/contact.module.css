@@ -1,6 +1,6 @@
 .contactSection {
   background-color: var(--peach);
-  background-image: url("../public/assets/contact/mobile/bg-pattern-hero-contact-mobile.svg");
+  background-image: url("/images/mobile/bg-pattern-hero-contact-mobile.svg");
   background-repeat: no-repeat;
   background-position: -100px 0;
   padding: 80px 24px;
@@ -71,7 +71,7 @@
   .contactSection {
     margin-inline: 0;
     border-radius: 15px;
-    background-image: url("../public/assets/contact/desktop/bg-pattern-hero-desktop.svg");
+    background-image: url("/images/desktop/bg-pattern-hero-desktop.svg");
     background-repeat: no-repeat;
     background-position: -125px -90px;
     padding: 77px 58px;

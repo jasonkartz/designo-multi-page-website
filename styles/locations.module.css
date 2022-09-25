@@ -6,18 +6,15 @@
   margin-inline: -24px;
 }
 .imgCanada {
-  background: url("../public/assets/locations/tablet/image-map-canada.png")
-    no-repeat;
+  background: url("/images/tablet/image-map-canada.png") no-repeat;
   background-size: cover;
 }
 .imgAustralia {
-  background: url("../public/assets/locations/tablet/image-map-australia.png")
-    no-repeat;
+  background: url("/images/tablet/image-map-australia.png") no-repeat;
   background-size: cover;
 }
 .imgUK {
-  background: url("../public/assets/locations/tablet//image-map-uk.png")
-    no-repeat;
+  background: url("/images/tablet//image-map-uk.png") no-repeat;
   background-size: cover;
 }
 
@@ -32,18 +29,15 @@
     flex-direction: row;
   }
   .imgCanada {
-    background: url("../public/assets/locations/desktop/image-map-canada.png")
-      no-repeat;
+    background: url("/images/image-map-canada.png") no-repeat;
     background-size: cover;
   }
   .imgAustralia {
-    background: url("../public/assets/locations/desktop/image-map-australia.png")
-      no-repeat;
+    background: url("/images/image-map-australia.png") no-repeat;
     background-size: cover;
   }
   .imgUK {
-    background: url("../public/assets/locations/desktop/image-map-united-kingdom.png")
-      no-repeat;
+    background: url("/images/image-map-united-kingdom.png") no-repeat;
     background-size: cover;
   }
 }

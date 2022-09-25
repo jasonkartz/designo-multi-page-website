@@ -1,7 +1,7 @@
 import Image from "next/image";
-import logo from "../public/assets/shared/desktop/logo-dark.png";
-import hamburger from "../public/assets/shared/mobile/icon-hamburger.svg";
-import closeMenu from "../public/assets/shared/mobile/icon-close.svg";
+import logo from "../public/images/logo-dark.png";
+import hamburger from "../public/images/mobile/icon-hamburger.svg";
+import closeMenu from "../public/images/mobile/icon-close.svg";
 import styles from "./Header.module.css";
 import { useState } from "react";
 import Link from "next/link";

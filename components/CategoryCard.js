@@ -1,4 +1,4 @@
-import rightArrow from "../public/assets/shared/desktop/icon-right-arrow.svg";
+import rightArrow from "../public/images/icon-right-arrow.svg";
 import Image from "next/image";
 import Link from "next/link";
 

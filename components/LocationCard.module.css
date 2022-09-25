@@ -7,8 +7,8 @@
 }
 .locationText {
   text-align: center;
-  background: url("../public/assets/shared/desktop/bg-pattern-three-circles.svg")
-    no-repeat var(--lighter-peach);
+  background: url("/images/bg-pattern-three-circles.svg") no-repeat
+    var(--lighter-peach);
   color: var(--dark-grey);
   padding: 80px 24px;
 }
@@ -36,8 +36,8 @@
     flex-direction: column;
     padding: 88px 75px;
     min-height: 326px;
-    background: url("../public/assets/shared/desktop/bg-pattern-two-circles.svg")
-      no-repeat var(--lighter-peach);
+    background: url("/images/bg-pattern-two-circles.svg") no-repeat
+      var(--lighter-peach);
     background-position: 0 100%;
   }
   .addressContainer {

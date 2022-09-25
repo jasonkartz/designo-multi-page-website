@@ -9,6 +9,7 @@ export default function Infographic({ image, alt, title, description }) {
         alt={alt}
         width={202}
         height={202}
+        priority={true}
       />
       <div className="text-infographic">
         <h3>{title}</h3>

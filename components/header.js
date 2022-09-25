@@ -20,6 +20,7 @@ export default function Header() {
               alt="Designo Logo"
               width={196}
               height={24}
+              priority={true}
             />
           </a>
         </Link>
@@ -53,6 +54,7 @@ export default function Header() {
               alt="Close Navigation Menu"
               width={20}
               height={20}
+              priority={true}
             />
           ) : (
             <Image
@@ -60,6 +62,7 @@ export default function Header() {
               alt="Open Navigation Menu"
               width={24}
               height={20}
+              priority={true}
             />
           )}
         </button>

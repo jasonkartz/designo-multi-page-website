@@ -11,7 +11,13 @@ export default function CategoryCard({ background, title, link }) {
             <h2>{title ? title : "Default Title"}</h2>
             <p>
               View Projects{" "}
-              <Image src={rightArrow} alt="Right Arrow" height={8} width={4} />{" "}
+              <Image
+                src={rightArrow}
+                alt="Right Arrow"
+                height={8}
+                width={4}
+                priority={true}
+              />{" "}
             </p>
           </div>
         </a>

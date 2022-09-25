@@ -7,7 +7,13 @@ export default function FormError({ className, message }) {
       <p>
         <em>{message ? message : "Error"}</em>
       </p>
-      <Image src={iconError} alt="Error" height={20} width={20} />
+      <Image
+        src={iconError}
+        alt="Error"
+        height={20}
+        width={20}
+        priority={true}
+      />
     </div>
   );
 }

@@ -1,6 +1,5 @@
 import styles from "./Footer.module.css";
 import Image from "next/image";
-import logo from "../public/images/logo-light.png";
 import Link from "next/link";
 
 export default function Footer({ includeContactCard }) {

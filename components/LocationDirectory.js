@@ -15,6 +15,7 @@ export default function LocationDirectory() {
           alt="canada"
           width={202}
           height={202}
+          priority={true}
         />
         <h3>Canada</h3>
         <Link href="locations#canada">
@@ -28,6 +29,7 @@ export default function LocationDirectory() {
           alt="australia"
           width={202}
           height={202}
+          priority={true}
         />
         <h3>Australia</h3>
         <Link href="locations#australia">
@@ -41,6 +43,7 @@ export default function LocationDirectory() {
           alt="united kingdom"
           width={202}
           height={202}
+          priority={true}
         />
         <h3>United Kingdom</h3>
         <Link href="locations#uk">

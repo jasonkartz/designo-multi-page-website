@@ -13,7 +13,7 @@ export default function LocationCard({
 }) {
   return (
     <div id={anchorId} className={`${styles.location} ${containerClass}`}>
-      <div className={`${styles.mapImage} ${imageClass}`}></div>
+      <div className={`${styles.mapImage} ${imageClass && imageClass}`}></div>
       <div className={styles.locationText}>
         <h4>{locationTitle}</h4>
         <div className={styles.addressContainer}>

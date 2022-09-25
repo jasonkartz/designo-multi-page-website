@@ -34,6 +34,7 @@ export default function Footer({ includeContactCard }) {
                 alt="Designo Logo"
                 width={202}
                 height={27}
+                priority={true}
               />
             </a>
           </Link>
@@ -77,6 +78,7 @@ export default function Footer({ includeContactCard }) {
                   alt="Follow us on Facebook"
                   width={24}
                   height={24}
+                  priority={true}
                 />
               </a>
             </li>
@@ -87,6 +89,7 @@ export default function Footer({ includeContactCard }) {
                   alt="Subscribe to our YouTube Channel"
                   width={24}
                   height={24}
+                  priority={true}
                 />
               </a>
             </li>
@@ -97,6 +100,7 @@ export default function Footer({ includeContactCard }) {
                   alt="Follow us on Twitter"
                   width={24}
                   height={24}
+                  priority={true}
                 />
               </a>
             </li>
@@ -107,6 +111,7 @@ export default function Footer({ includeContactCard }) {
                   alt="Follow us on Pinterest"
                   width={24}
                   height={24}
+                  priority={true}
                 />
               </a>
             </li>
@@ -117,6 +122,7 @@ export default function Footer({ includeContactCard }) {
                   alt="Follow us on Instagram"
                   width={24}
                   height={24}
+                  priority={true}
                 />
               </a>
             </li>

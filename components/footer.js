@@ -1,11 +1,6 @@
 import styles from "./Footer.module.css";
 import Image from "next/image";
 import logo from "../public/images/logo-light.png";
-import iconFacebook from "../public/images/icon-facebook.svg";
-import iconInstagram from "../public/images/icon-instagram.svg";
-import iconPinterest from "../public/images/icon-pinterest.svg";
-import iconTwitter from "../public/images/icon-twitter.svg";
-import iconYoutube from "../public/images/icon-youtube.svg";
 import Link from "next/link";
 
 export default function Footer({ includeContactCard }) {
@@ -35,7 +30,7 @@ export default function Footer({ includeContactCard }) {
             <a>
               <Image
                 className={styles.logo}
-                src={logo}
+                src="/images/logo-light.png"
                 alt="Designo Logo"
                 width={202}
                 height={27}
@@ -78,7 +73,7 @@ export default function Footer({ includeContactCard }) {
             <li>
               <a>
                 <Image
-                  src={iconFacebook}
+                  src="/images/icon-facebook.svg"
                   alt="Follow us on Facebook"
                   width={24}
                   height={24}
@@ -88,7 +83,7 @@ export default function Footer({ includeContactCard }) {
             <li>
               <a>
                 <Image
-                  src={iconYoutube}
+                  src="/images/icon-youtube.svg"
                   alt="Subscribe to our YouTube Channel"
                   width={24}
                   height={24}
@@ -98,7 +93,7 @@ export default function Footer({ includeContactCard }) {
             <li>
               <a>
                 <Image
-                  src={iconTwitter}
+                  src="/images/icon-twitter.svg"
                   alt="Follow us on Twitter"
                   width={24}
                   height={24}
@@ -108,7 +103,7 @@ export default function Footer({ includeContactCard }) {
             <li>
               <a>
                 <Image
-                  src={iconPinterest}
+                  src="/images/icon-pinterest.svg"
                   alt="Follow us on Pinterest"
                   width={24}
                   height={24}
@@ -118,7 +113,7 @@ export default function Footer({ includeContactCard }) {
             <li>
               <a>
                 <Image
-                  src={iconInstagram}
+                  src="/images/icon-instagram.svg"
                   alt="Follow us on Instagram"
                   width={24}
                   height={24}

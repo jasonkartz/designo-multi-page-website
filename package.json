@@ -9,12 +9,10 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "leaflet": "^1.9.1",
     "next": "12.2.5",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-hook-form": "^7.36.1",
-    "react-leaflet": "^4.1.0",
     "styled-components": "^5.3.5"
   },
   "devDependencies": {

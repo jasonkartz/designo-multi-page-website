@@ -1,5 +1,5 @@
 import CategoryCard from "../components/CategoryCard";
-import Infographic from "../components/InfoGraphic";
+import Infographic from "../components/Infographic";
 import friendlyImg from "../public/assets/home/desktop/illustration-friendly.svg";
 import passionateImg from "../public/assets/home/desktop/illustration-passionate.svg";
 import resourcefulImg from "../public/assets/home/desktop/illustration-resourceful.svg";
